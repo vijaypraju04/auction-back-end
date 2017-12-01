@@ -7,9 +7,7 @@ class Api::V1::AuctionsController < ApplicationController
 
   def show
     @auction = Auction.find(params[:id])
-      respond_to do |format|
-      format.json { render json: @auction }
-    end
+      render json: @auction
   end
 
   def create
