@@ -13,7 +13,6 @@ class Api::V1::AuctionsController < ApplicationController
   end
 
   def create
-    byebug
     @auction = Auction.create(auction_params)
     render json: @auction
   end

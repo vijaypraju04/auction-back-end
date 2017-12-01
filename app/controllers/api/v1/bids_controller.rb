@@ -6,7 +6,6 @@ class Api::V1::BidsController < ApplicationController
   end
 
   def create
-    byebug
     @bid = Bid.create(bid_params)
     @bid.save
     render json: @bid
