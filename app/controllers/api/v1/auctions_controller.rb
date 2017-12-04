@@ -1,5 +1,7 @@
 class Api::V1::AuctionsController < ApplicationController
 
+  # before_action :
+
   def index
     @auctions = Auction.all
     render json: @auctions
