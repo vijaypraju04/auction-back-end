@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-user1 = User.create(username: "vijaypraju04", amount: 20000)
-user2 = User.create(username: "frawlcity", amount: 20000)
-user3 = User.create(username: "kendog", amount: 20000)
-user4 = User.create(username: "itsjustdiego", amount: 20000)
+user1 = User.create(username: "vijaypraju04", password: "kenneth", amount: 20000)
+user2 = User.create(username: "frawlcity", password: "kenneth", amount: 20000)
+user3 = User.create(username: "kendog", password: "kenneth", amount: 20000)
+user4 = User.create(username: "itsjustdiego", password: "kenneth", amount: 20000)
 
 auction1 = Auction.create(item: "http://www.toptenz.net/wp-content/uploads/2010/06/Sultans-golden-cake-most-expensive-desserts.jpg", title: "Sultan's Golden Cake", description: "A great pastry", value: 5000)
 

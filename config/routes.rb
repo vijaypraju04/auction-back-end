@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       resources :users, only: [:index, :create]
       resources :auctions, only: [:index, :show, :create]
       resources :bids, only: [:index, :show, :create]
+      post '/login', to: 'sessions#create'
     end
   end
 end
